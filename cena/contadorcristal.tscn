@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d28bcwrqwbk2f"]
+
+[ext_resource type="Script" uid="uid://1k1eqesq4mwj" path="res://cena/contadorcristal.gd" id="1_glyb1"]
+
+[node name="contadorcristal" type="Label" unique_id=1464125339 groups=["hud"]]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "cristal : 0"
+script = ExtResource("1_glyb1")
