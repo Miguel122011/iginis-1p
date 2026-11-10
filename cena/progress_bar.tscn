@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c24q7txspjfki"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5k1ae"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14tvh"]
+bg_color = Color(0.8235294, 0.06666667, 0.043137256, 1)
+border_color = Color(0.36659458, 0.36659467, 0.36659434, 1)
+
+[node name="vida" type="ProgressBar" unique_id=101250500]
+offset_right = 100.0
+offset_bottom = 5.0
+theme_override_styles/background = SubResource("StyleBoxFlat_5k1ae")
+theme_override_styles/fill = SubResource("StyleBoxFlat_14tvh")
+value = 100.0
+show_percentage = false

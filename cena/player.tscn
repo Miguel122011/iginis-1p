@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dusfh6ulapucs"]
 
-[ext_resource type="Script" uid="uid://c78ebxfwbymof" path="res://character_body_2d.gd" id="1_cf8qa"]
+[ext_resource type="Script" uid="uid://c78ebxfwbymof" path="res://codigo/character_body_2d.gd" id="1_cf8qa"]
 [ext_resource type="Texture2D" uid="uid://dnhfkb5o4ukc3" path="res://imagem/SPRITE_SHEET.png" id="2_cf8qa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
@@ -136,7 +136,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1698257159]
+[node name="Player" type="CharacterBody2D" unique_id=1698257159 groups=["player"]]
 position = Vector2(327, 124)
 script = ExtResource("1_cf8qa")
 metadata/_edit_group_ = true

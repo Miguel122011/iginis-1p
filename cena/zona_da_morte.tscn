@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cc36ls1vt8ruq"]
+
+[ext_resource type="Script" uid="uid://cba5ny6cw8pa1" path="res://cena/zona_da_morte.gd" id="1_yyai5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
+size = Vector2(451, 38)
+
+[node name="zona da morte" type="Area2D" unique_id=1124343967]
+script = ExtResource("1_yyai5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1518438327]
+position = Vector2(210.5, 85)
+shape = SubResource("RectangleShape2D_ebum8")
+debug_color = Color(0.99999994, 0.00084512786, 0.10018981, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

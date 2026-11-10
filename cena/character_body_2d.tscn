@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cx5pu505tsxva"]
 
-[ext_resource type="Script" uid="uid://c78ebxfwbymof" path="res://character_body_2d.gd" id="1_t0bcn"]
+[ext_resource type="Script" uid="uid://c78ebxfwbymof" path="res://codigo/character_body_2d.gd" id="1_t0bcn"]
 [ext_resource type="Texture2D" uid="uid://de8bc7vfb1ka1" path="res://imagem/sprite sheet 9x12 (free).png" id="2_vumkj"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
 size = Vector2(22, 27)

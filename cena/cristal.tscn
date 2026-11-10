@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gah7xiuq0rqm"]
 
-[ext_resource type="Script" uid="uid://01sfsggwadf" path="res://cristal.gd" id="1_j2yt3"]
+[ext_resource type="Script" uid="uid://01sfsggwadf" path="res://codigo/cristal.gd" id="1_j2yt3"]
 [ext_resource type="Texture2D" uid="uid://fe1an0vrnwuj" path="res://imagem/coletavel/crystal_dark_32x32_24f_20d.png" id="2_72fr5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ebum8"]
