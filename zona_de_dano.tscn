@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cdhpupwwofrpx"]
+
+[ext_resource type="Script" uid="uid://cem2hkid0qgas" path="res://zona_de_dano.gd" id="1_iobrf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
+size = Vector2(36, 20)
+
+[node name="zona de dano" type="Area2D" unique_id=1366390300]
+script = ExtResource("1_iobrf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1069104774]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_ebum8")
+debug_color = Color(0.08291236, 0.1381436, 0.019765327, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

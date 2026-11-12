@@ -1,15 +1,23 @@
 [gd_scene format=3 uid="uid://c24q7txspjfki"]
 
+[ext_resource type="Script" uid="uid://b1huhy122o3bh" path="res://cena/progress_bar.gd" id="1_14tvh"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5k1ae"]
+bg_color = Color(0.4083111, 0.08334885, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14tvh"]
 bg_color = Color(0.8235294, 0.06666667, 0.043137256, 1)
 border_color = Color(0.36659458, 0.36659467, 0.36659434, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
 
 [node name="vida" type="ProgressBar" unique_id=101250500]
 offset_right = 100.0
 offset_bottom = 5.0
 theme_override_styles/background = SubResource("StyleBoxFlat_5k1ae")
 theme_override_styles/fill = SubResource("StyleBoxFlat_14tvh")
-value = 100.0
+value = 40.0
 show_percentage = false
+script = ExtResource("1_14tvh")
