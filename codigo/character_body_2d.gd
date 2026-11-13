@@ -1,11 +1,20 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-# mudei
+	
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -250.0
 
+var vida_maxima = 100
+var vida_atual = 100
 
+@onready var barra_vida = $CanvasLayer/ProgressBar
+
+func receber_dano(dano):
+	vida_atual -= dano
+	vida_atual = max(vida_atual, 0)
+
+	barra_vida.value = vida_atual
 
 		
 

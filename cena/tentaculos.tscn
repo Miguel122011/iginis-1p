@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://c8wwwhu1lh770"]
+
+[ext_resource type="Texture2D" uid="uid://cidk6a0i7mrh6" path="res://imagem/tentaculos/tentaculo_0004 (1).png" id="1_8etls"]
+[ext_resource type="Texture2D" uid="uid://b3vqvwhiucjpp" path="res://imagem/tentaculos/tentaculo_0002 (2).png" id="2_iuyc6"]
+[ext_resource type="Texture2D" uid="uid://202n3veo5d8t" path="res://imagem/tentaculos/tentaculo_0003 (1).png" id="3_fnxb4"]
+[ext_resource type="Texture2D" uid="uid://cpxk4i0tv351n" path="res://imagem/tentaculos/tentaculo_0005 (1).png" id="4_dqsu4"]
+[ext_resource type="Texture2D" uid="uid://64e7k86cs3q7" path="res://imagem/tentaculos/tentaculo_0006 (1).png" id="5_sv8gm"]
+[ext_resource type="PackedScene" uid="uid://cc36ls1vt8ruq" path="res://cena/zona_da_morte.tscn" id="6_682x6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5utl"]
+atlas = ExtResource("1_8etls")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0urai"]
+atlas = ExtResource("2_iuyc6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evpp6"]
+atlas = ExtResource("3_fnxb4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kne4t"]
+atlas = ExtResource("1_8etls")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdp0i"]
+atlas = ExtResource("4_dqsu4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjx83"]
+atlas = ExtResource("5_sv8gm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_krmrj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5utl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0urai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evpp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kne4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdp0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjx83")
+}],
+"loop": 1,
+"name": &"tentaculos",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skykn"]
+size = Vector2(53, 34)
+
+[node name="tentaculos" type="CharacterBody2D" unique_id=30560482]
+position = Vector2(214, 131)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=741804032]
+sprite_frames = SubResource("SpriteFrames_krmrj")
+animation = &"tentaculos"
+autoplay = "tentaculos"
+frame = 2
+frame_progress = 0.842764
+
+[node name="zona da morte" parent="." unique_id=1124343967 instance=ExtResource("6_682x6")]
+position = Vector2(-89, -87)
+
+[node name="CollisionShape2D" parent="zona da morte" index="0" unique_id=1518438327]
+position = Vector2(92.5, 87)
+shape = SubResource("RectangleShape2D_skykn")
+
+[editable path="zona da morte"]
